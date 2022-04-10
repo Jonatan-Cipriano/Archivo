@@ -71,7 +71,7 @@ void crear(){
 		fwrite(&datos,sizeof(datos),1,archivo);
 		
 		fflush(stdin);
-		cout<<"¿Desea ingresar mas datos (s/n)?"<<endl;
+		cout<<"Â¿Desea ingresar mas datos (s/n)?"<<endl;
 		cin>>cont;
 	}while(cont=='s');
 	fclose(archivo);
@@ -108,6 +108,8 @@ void actualizar(){
 		cin>>datos.telefono;
 		fwrite(&datos,sizeof(datos),1,archivo);
 		fclose(archivo);
+	
+	
 		leer();
 		
 }
